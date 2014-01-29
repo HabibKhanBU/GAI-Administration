@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="HKViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zDM-XL-bBS"/>
+                        <viewControllerLayoutGuide type="bottom" id="LAT-Yy-hdK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CB00001" translatesAutoresizingMaskIntoConstraints="NO" id="4eH-1B-qY0">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="240" translatesAutoresizingMaskIntoConstraints="NO" id="bAw-qC-Z2F">
+                                <rect key="frame" x="40" y="210" width="240" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="48F-c1-zDh"/>
+                                    <constraint firstAttribute="width" constant="240" id="Mxw-Qd-W9k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" red="0.081328499289999995" green="0.75078549589999999" blue="0.091601430390000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4eH-1B-qY0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8d5-Jr-AaZ"/>
+                            <constraint firstItem="LAT-Yy-hdK" firstAttribute="top" secondItem="4eH-1B-qY0" secondAttribute="bottom" id="JRp-4a-WNE"/>
+                            <constraint firstItem="4eH-1B-qY0" firstAttribute="centerY" secondItem="bAw-qC-Z2F" secondAttribute="centerY" constant="24" id="PqZ-KF-iyk"/>
+                            <constraint firstAttribute="trailing" secondItem="4eH-1B-qY0" secondAttribute="trailing" id="aCO-eZ-EEu"/>
+                            <constraint firstItem="4eH-1B-qY0" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="i8Y-RB-njH"/>
+                            <constraint firstItem="4eH-1B-qY0" firstAttribute="centerX" secondItem="bAw-qC-Z2F" secondAttribute="centerX" id="pUs-Ko-RFh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImageView" destination="4eH-1B-qY0" id="doB-hN-xJx"/>
+                        <outlet property="predictionText" destination="bAw-qC-Z2F" id="Mbc-Qw-cMy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CB00001" width="320" height="568"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
